@@ -13,3 +13,6 @@ Installs neccesary dependencies.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Usage
+The user should enter a task and add it to the to-do list. The tasks can then be deleted with an X button or mark as completed with a tick button.
