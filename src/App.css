@@ -32,19 +32,20 @@ h1 {
 
 input,
 .addTask {
-  height: 4vh;
   font-size: 20px;
+  padding: 5px;
 }
 input {
   width: 70%;
 }
 
 .addTask {
-  width: 30%;
+  width: 25%;
   background-color: #98c1d9;
   color: white;
   border: 1px darkslategray solid;
   border-radius: 4px;
+  margin-left: 3px;
 }
 
 ul {
