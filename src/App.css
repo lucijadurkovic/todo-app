@@ -1,38 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+h1 {
+  color: white;
+  font-size: 5vh;
+}
+
+input,
+.addTask {
+  height: 4vh;
+  font-size: 20px;
+}
+input {
+  width: 70%;
+}
+
+.addTask {
+  width: 30%;
+  background-color: #98c1d9;
+  color: white;
+  border: 1px darkslategray solid;
+  border-radius: 4px;
+}
+
+ul {
+  padding: 20px;
+}
+li {
+  padding: 8px;
+  font-size: 25px;
+  color: white;
+}
+.deleteTask,
+.completeTask {
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 7px;
+  font-weight: 900;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.completeTask {
+  background-color: #3d315b;
+  border: white 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteTask {
+  background-color: #ff5533;
+  border: white 1px solid;
+}
+.completed {
+  text-decoration: line-through;
 }
